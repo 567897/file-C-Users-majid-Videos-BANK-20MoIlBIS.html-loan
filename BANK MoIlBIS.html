@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بنك Molbis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #8e44ad; /* اللون البنفسجي */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #2ecc71; /* اللون الأخضر */
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav a:hover {
+            color: #27ae60; /* تأثير على اللون الأخضر */
+        }
+        .bank-card {
+            background: linear-gradient(90deg, #e74c3c, #f39c12); /* الأحمر والأصفر */
+            color: white;
+            width: 400px;
+            height: 240px;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 50px auto;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+            margin: 20px;
+        }
+        .service {
+            background-color: white;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #2ecc71; /* الأخضر */
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>بنك Molbis</h1>
+        <p>أموالك في أيد أمينة</p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="#deposit">إيداع الأموال</a>
+        <a href="#transfer">تحويل الأموال</a>
+        <a href="#loan">القروض</a>
+        <a href="#contact">اتصل بنا</a>
+    </nav>
+
+    <!-- Main Content Section -->
+    <div class="container" id="deposit">
+        <h2>إيداع الأموال</h2>
+        <p>رصيدك الحالي: 0 ريال</p>
+        <p>لإيداع الأموال إلى حسابك، اضغط على الرابط التالي:</p>
+        <a href="https://www.paypal.com/paypalme/f5dh2t7xmk" target="_blank">إيداع عبر باي بال</a>
+    </div>
+
+    <div class="container" id="transfer">
+        <h2>تحويل الأموال</h2>
+        <p>لإجراء تحويل إلى شخص آخر، يرجى إدخال اسم الشخص الذي ترغب في تحويل الأموال إليه:</p>
+        <form action="#" method="POST">
+            <label for="recipient-name">اسم الشخص (بالإنجليزي):</label>
+            <input type="text" id="recipient-name" name="recipient-name" required>
+            <br><br>
+            <input type="submit" value="إجراء التحويل">
+        </form>
+    </div>
+
+    <div class="container" id="loan">
+        <h2>القروض</h2>
+        <p>إذا كنت ترغب في الحصول على قرض، يرجى تحديد المبلغ الذي ترغب في اقتراضه:</p>
+        <form action="#" method="POST">
+            <label for="loan-amount">المبلغ المطلوب:</label>
+            <input type="number" id="loan-amount" name="loan-amount" required>
+            <br><br>
+            <input type="submit" value="تقديم الطلب">
+        </form>
+        <p>انتظر... سيتم مراجعة طلبك قريبًا.</p>
+    </div>
+
+    <!-- Bank Card Section -->
+    <div class="bank-card">
+        <h3>بطاقة بنك Molbis</h3>
+        <p>رقم البطاقة: 1234 5678 9876 5432</p>
+        <p>الرصيد: 0 ريال</p>
+        <p>بطاقة ائتمانية صادرة من بنك Molbis</p>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2025 بنك Molbis</p>
+    </footer>
+</body>
+</html>
